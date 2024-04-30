@@ -58,10 +58,9 @@ export default function PrayerTimes({
           md:[&>*]:border [&>*]:border-mosqueGreen-dark
           [&>th]:border-t-0 [&>th:last-of-type]:border-r-0"
         >
-          <th className="sr-only">Prayer time</th>
-          <th className="md:text-5xl">Begins</th>
-          <th className="md:text-5xl">Jama&apos;ah</th>
-          <th className="md:text-5xl">Tomorrow</th>
+          <th className="sr-only">Waktu solat</th>
+          <th className="md:text-5xl">Mula</th>
+          <th className="md:text-5xl">Esok</th>
         </tr>
       </thead>
       <tbody>
@@ -83,16 +82,6 @@ export default function PrayerTimes({
               {prayer.label}
             </th>
             <td className="text-xl md:text-6xl">
-              {moment(prayer.data.start, ["HH:mm"]).format("h:mm")}
-              {prayer.data?.start_secondary ? (
-                <div className="block mt-1 md:mt-2">
-                  {moment(prayer.data.start_secondary, ["HH:mm"]).format(
-                    "h:mm",
-                  )}
-                </div>
-              ) : null}
-            </td>
-            <td className={`font-bold text-xl md:text-6xl`}>
               <span
                 className={
                   nextPrayerTime.today === true &&
@@ -101,10 +90,15 @@ export default function PrayerTimes({
                     : ""
                 }
               >
-                {moment(prayer.data.congregation_start, ["HH:mm"]).format(
-                  "h:mm",
-                )}
-              </span>
+                {moment(prayer.data.start, ["HH:mm"]).format("h:mm")}
+                {prayer.data?.start_secondary ? (
+                  <div className="block mt-1 md:mt-2">
+                    {moment(prayer.data.start_secondary, ["HH:mm"]).format(
+                      "h:mm",
+                    )}
+                  </div>
+                ) : null}
+                </span>
             </td>
             <td className={`text-xl md:text-6xl`}>
               <span
