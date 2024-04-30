@@ -20,7 +20,7 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      background: {
+      colors: {
         mosque: {
           highlight: "#10b981",
           DEFAULT: "linear-gradient(to top, #a8edea 0%, #fed6e3 100%)",
