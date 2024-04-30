@@ -33,7 +33,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#0C5A4B" />
       </head>
       <body
-        className={`${inter.className} bg-gradient-to-t from-indigo-500 to-purple-500 min-w-full min-h-screen`}
+        className={`${inter.className} bg-gradient-to-t from-gray-900 to-slate-800 min-w-full min-h-screen`}
       >
         {children}
       </body>
