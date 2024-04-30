@@ -33,7 +33,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#0C5A4B" />
       </head>
       <body
-        className={`${inter.className} bg-mosque min-w-full min-h-screen`}
+        className={`${inter.className} gradient-conic min-w-full min-h-screen`}
       >
         {children}
       </body>
