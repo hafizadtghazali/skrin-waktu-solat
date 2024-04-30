@@ -51,11 +51,11 @@ export default function PrayerTimes({
   }, [today])
 
   return (
-    <table className="text-white mx-auto table-auto border-collapse border-none w-full">
+    <table className="text-dark mx-auto table-auto border-collapse border-none w-full">
       <thead>
         <tr
           className="text-center [&>*]:p-2 md:[&>*]:p-8
-          md:[&>*]:border [&>*]:border-mosqueGreen-dark
+          md:[&>*]:border [&>*]:border-mosque-dark
           [&>th]:border-t-0 [&>th:last-of-type]:border-r-0"
         >
           <th className="sr-only">Waktu solat</th>
