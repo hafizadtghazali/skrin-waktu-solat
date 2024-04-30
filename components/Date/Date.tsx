@@ -3,8 +3,8 @@
 import moment from "moment-hijri"
 
 export default function Date() {
-  const englishDate = moment().locale("my").format("dddd D MMMM YYYY")
-  const hijriDate = moment().locale("my").format("iD iMMMM iYYYY")
+  const englishDate = moment().locale("ms_MY").format("dddd D MMMM YYYY")
+  const hijriDate = moment().locale("ms_MY").format("iD iMMMM iYYYY")
 
   return (
     <div className="text-dark text-center md:text-left">
