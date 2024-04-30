@@ -22,9 +22,9 @@ const config: Config = {
       },
       colors: {
         mosque: {
-          highlight: "#10b981",
-          DEFAULT: "linear-gradient(to top, #a8edea 0%, #fed6e3 100%)",
-          dark: "#0C5A4B",
+          highlight: "#d3dce6",
+          DEFAULT: "#8492a6",
+          dark: "#8492a6",
         },
       },
     },
