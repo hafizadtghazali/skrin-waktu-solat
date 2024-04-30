@@ -71,11 +71,11 @@ export default function PrayerTimes({
               text-center
               [&>*]:p-4
               md:[&>*]:p-8
-              md:[&>*]:border md:[&>*]:border-b-0 [&>*]:border-mosqueGreen-dark
+              md:[&>*]:border md:[&>*]:border-b-0 [&>*]:border-mosque-dark
               md:[&>th]:w-20
               [&>th]:border-l-0
               [&>td:last-of-type]:border-r-0
-              border border-mosqueGreen-dark border-l-0 border-r-0
+              border border-mosque-dark border-l-0 border-r-0
               last-of-type:border-b-0"
           >
             <th className="text-left text-xl md:text-5xl md:text-right">
@@ -86,7 +86,7 @@ export default function PrayerTimes({
                 className={
                   nextPrayerTime.today === true &&
                   nextPrayerTime.prayerIndex === index
-                    ? "underline decoration-mosqueGreen-highlight underline-offset-8"
+                    ? "underline decoration-mosque-highlight underline-offset-8"
                     : ""
                 }
               >
@@ -98,7 +98,7 @@ export default function PrayerTimes({
                 className={
                   nextPrayerTime.today === false &&
                   nextPrayerTime.prayerIndex === index
-                    ? "underline decoration-mosqueGreen-highlight underline-offset-8"
+                    ? "underline decoration-mosque-highlight underline-offset-8"
                     : ""
                 }
               >
