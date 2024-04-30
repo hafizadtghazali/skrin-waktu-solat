@@ -14,17 +14,17 @@ export default function PrayerTimes({
 }) {
   const PrayerTimesArray = [
     {
-      label: "Fajr",
+      label: "Subuh",
       data: today.fajr,
       tomorrow: tomorrow.fajr,
     },
     {
-      label: "Zuhr",
+      label: "Zohor",
       data: today.zuhr,
       tomorrow: tomorrow.zuhr,
     },
     {
-      label: "Asr",
+      label: "Asar",
       data: today.asr,
       tomorrow: tomorrow.asr,
     },
@@ -34,7 +34,7 @@ export default function PrayerTimes({
       tomorrow: tomorrow.maghrib,
     },
     {
-      label: "Isha",
+      label: "Isyak",
       data: today.isha,
       tomorrow: tomorrow.isha,
     },
